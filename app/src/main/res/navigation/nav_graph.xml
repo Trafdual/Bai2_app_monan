@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/drinkFragment">
+    <fragment
+        android:id="@+id/drinkFragment"
+        android:name="tranhph26979.fpoly.app_monan_bai2.fragment.DrinkFragment"
+        android:label="DrinkFragment">
+        <action
+            android:id="@+id/action"
+            app:destination="@id/fastFoodFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fastFoodFragment"
+        android:name="tranhph26979.fpoly.app_monan_bai2.fragment.FastFoodFragment"
+        android:label="FastFoodFragment">
+        <action
+            android:id="@+id/action"
+            app:destination="@id/hotPotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotPotFragment"
+        android:name="tranhph26979.fpoly.app_monan_bai2.fragment.HotPotFragment"
+        android:label="HotPotFragment">
+        <action
+            android:id="@+id/action"
+            app:destination="@id/porridgeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/porridgeFragment"
+        android:name="tranhph26979.fpoly.app_monan_bai2.fragment.PorridgeFragment"
+        android:label="PorridgeFragment">
+        <action
+            android:id="@+id/action"
+            app:destination="@id/finalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="tranhph26979.fpoly.app_monan_bai2.fragment.FinalFragment"
+        android:label="FinalFragment">
+        <action
+            android:id="@+id/action"
+            app:destination="@id/drinkFragment" />
+    </fragment>
+
+
+</navigation>
